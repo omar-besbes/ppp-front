@@ -31,10 +31,6 @@ const Home: NextPage = () => {
 
     await fetch(process.env.NEXT_PUBLIC_API_URL as string, {
       method: "POST",
-      headers: {
-        "Content-Type": "multipart/form-data",
-        Accept: "application/json",
-      },
       body: formData,
     })
       .then((response) => {
