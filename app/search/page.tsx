@@ -100,10 +100,9 @@ const Home: NextPage = () => {
                   >
                     {recommendations.map((image, index) => (
                       <Image
-                        id="image"
                         key={index}
                         alt={`img-${index}`}
-                        src={"/images/"+image}
+                        src={image}
                         className="!relative max-h-96 min-h-[10rem] cursor-default rounded-2xl"
                         fill
                       />
