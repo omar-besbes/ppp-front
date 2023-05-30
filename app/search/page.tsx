@@ -31,10 +31,6 @@ const Home: NextPage = () => {
 
     await fetch(process.env.NEXT_PUBLIC_API_URL as string, {
       method: "POST",
-      headers: {
-        "Content-Type": "multipart/form-data",
-        Accept: "application/json",
-      },
       body: formData,
     })
       .then((response) => {
@@ -104,9 +100,10 @@ const Home: NextPage = () => {
                   >
                     {recommendations.map((image, index) => (
                       <Image
+                        id="image"
                         key={index}
                         alt={`img-${index}`}
-                        src={image}
+                        src={"/images/"+image}
                         className="!relative max-h-96 min-h-[10rem] cursor-default rounded-2xl"
                         fill
                       />
