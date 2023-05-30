@@ -107,7 +107,7 @@ const Home: NextPage = () => {
                         key={index}
                         alt={`img-${index}`}
                         src={image}
-                        className="!relative max-h-96 min-h-min cursor-default rounded-2xl"
+                        className="!relative max-h-96 min-h-[10rem] cursor-default rounded-2xl"
                         fill
                       />
                     ))}
