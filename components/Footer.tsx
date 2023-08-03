@@ -4,11 +4,11 @@ export default function Footer() {
       <div className="text-gray-500">
         Powered by{" "}
         <a
-          href="https://pytorch.org/"
+          href="https://tensorflow.org/"
           target="_blank"
           className="font-bold underline-offset-2 transition hover:text-gray-300 hover:underline"
         >
-          PyTorch{" "}
+          Tensorflow{" "}
         </a>
         and{" "}
         <a
